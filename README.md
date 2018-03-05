@@ -1,6 +1,6 @@
 # 홍씨개발자의 블로그 / [Dev.hong blog](https://hongseongsu.github.io/)
 
-
+- 지킬 참고 문서[jekyll Doc] (http://jekyllrb-ko.github.io/docs/structure/)
 
 ### 블로그에 추가할 기능
 
