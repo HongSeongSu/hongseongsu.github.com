@@ -2,17 +2,17 @@
  * Site header
  */
  .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
   
     // Positioning context for the mobile navigation icon
     position: relative;
+    box-shadow: 0px 0px 5px rgb(231, 231, 231);
   }
   
   .site-title {
-    @include relative-font-size(1.625);
-    font-weight: 300;
+    @include relative-font-size(1.4);
+    font-weight: 500;
     line-height: $base-line-height * $base-font-size * 2.25;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -106,8 +106,8 @@
    * Site footer
    */
   .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    box-shadow: 0px 0px 5px rgb(231, 231, 231);
   }
   
   .footer-heading {
@@ -173,10 +173,11 @@
   
   
   /**
-   * Page content
+   * 페이지 콘텐츠
    */
   .page-content {
     padding: $spacing-unit 0;
+    background-color: #f1f1f1;
   }
   
   .page-heading {
@@ -193,16 +194,24 @@
   
     > li {
       margin-bottom: $spacing-unit;
+      position: relative;
+      width: 100%;
+      height: 100px;
+      border-bottom: 1px solid #ababab;
     }
   }
   
+  // 포스트 날짜;
   .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: #696969;
   }
   
+  // 포스트 리스트 제목;
   .post-link {
-    display: block;
+    display: flex;
+    position: absolute;
+    align-items: center;
     @include relative-font-size(1.5);
   }
   
