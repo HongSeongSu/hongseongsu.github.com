@@ -11,7 +11,8 @@ layout: default
   {{ content }}
 
   {% if site.posts.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <!-- 포스트 리스트 제목 - 기본설정은 "posts" or 페이지 리스트제목 -->
+    <div class="post-list-heading-box"></div><h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {% for post in site.posts %}
       <li>
