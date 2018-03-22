@@ -194,15 +194,15 @@
       height: 15px;
       top: 28px;
       left: -31px;
-      background: linear-gradient(70deg, rgba(255,221,97,0.3) 0%, rgba(253,100,45,0.7) 88%);
+      background: linear-gradient(51deg, rgba(241,241,241,1) 0%, rgba(254,247,162,1) 29%, rgba(255,174,75,1) 100%);
     }
   }
-  
+
   .post-list {
     margin-top: 62px;
     margin-left: 0;
     list-style: none;
-  
+    
     > li {
       margin-bottom: $spacing-unit;
       position: relative;
@@ -224,8 +224,41 @@
     position: absolute;
     align-items: center;
     @include relative-font-size(1.5);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: 4px;
+    cursor: pointer;
+    &::before{
+      content:"";
+      width: 0;
+      display:block;
+      height: 60%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0ms, background 2000ms;
+    }
+    &::after{
+      content:"";
+      width: 0;
+      display:block;
+      height: 60%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      transition: width 1000ms;
+      background: linear-gradient(30deg, rgba(241,241,241,0.2) 0%, rgba(227,227,227,0.3) 31%, rgba(208,208,208,0.5) 84%);      
+    }
+    &:hover::before{
+      width: 40%;
+      background: linear-gradient(30deg, rgba(241,241,241,0.2) 0%, rgba(227,227,227,0.3) 31%, rgba(208,208,208,0.5) 84%);      
+      transition: width 1000ms;
+    }
   }
-  
+
   
   
   /**
@@ -234,17 +267,25 @@
   .post-header {
     margin-bottom: $spacing-unit;
   }
-  
+
+  // 포스터 제목
   .post-title {
-    @include relative-font-size(2.625);
-    letter-spacing: -1px;
+    @include relative-font-size(1.5);
+    letter-spacing: 0.5px;
     line-height: 1;
+    font-weight: 500;
+    margin-top: 30px;
+    color: #5f5f5f;
   
     @include media-query($on-laptop) {
       @include relative-font-size(2.25);
     }
   }
-  
+
+    .p-name{
+      color: #5f5f5f;
+    }
+
   .post-content {
     margin-bottom: $spacing-unit;
   
