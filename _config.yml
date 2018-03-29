@@ -29,6 +29,14 @@ theme: minima
 plugins:
   - jekyll-feed
 
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Categories
+   url: /category
+   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
