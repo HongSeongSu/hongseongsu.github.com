@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-# Hong SeongSu
+## Hong SeongSu
 
 email: sshong1991@gmail.com
 

@@ -1,0 +1,17 @@
+<div class="box">
+    <aside class="menu">
+        <p class="menu-label">
+            카테고리
+        </p>
+        <ul class="menu-list">
+            {% for category in site.categories %}
+            <li>
+                <a href="/category#{{ category[0] }}" onclick="location.hash='{{ category[0] }}';location.reload()">
+                    {{ category[0] }}
+                    <span class="tag is-info is-pulled-right">{{ categoey[1].size }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </aside>
+</div>
