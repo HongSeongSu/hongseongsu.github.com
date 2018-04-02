@@ -32,9 +32,9 @@ plugins:
 navigation:
  - title: Home
    url: /index.html
- - title: About
+ - title: about
    url: /about
- - title: Categories
+ - title: categories
    url: /category
    
 # Exclude from processing.

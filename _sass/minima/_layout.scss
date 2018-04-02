@@ -212,12 +212,6 @@
     }
   }
   
-  // 포스트 날짜;
-  .post-meta {
-    font-size: $small-font-size;
-    color: #696969;
-  }
-  
   // 포스트 리스트 제목;
   .post-link {
     display: flex;
@@ -244,7 +238,7 @@
       content:"";
       width: 0;
       display:block;
-      height: 60%;
+      height: 20%;
       position: absolute;
       top: 0;
       right: 0;
@@ -253,7 +247,7 @@
       background: linear-gradient(30deg, rgba(241,241,241,0.2) 0%, rgba(227,227,227,0.3) 31%, rgba(208,208,208,0.5) 84%);      
     }
     &:hover::before{
-      width: 40%;
+      width: 10%;
       background: linear-gradient(30deg, rgba(241,241,241,0.2) 0%, rgba(227,227,227,0.3) 31%, rgba(208,208,208,0.5) 84%);      
       transition: width 1000ms;
     }
@@ -264,9 +258,6 @@
   /**
    * 포스트
    */
-  .post-header {
-    margin-bottom: $spacing-unit;
-  }
 
   // 포스터 제목
   .post-title {
@@ -282,13 +273,10 @@
     }
   }
 
-    .p-name{
-      color: #5f5f5f;
-    }
-
   .post-content {
     margin-bottom: $spacing-unit;
-  
+    padding-top: 30px;
+    padding-bottom: 60px;
     h2 {
       @include relative-font-size(2);
   
@@ -313,3 +301,22 @@
       }
     }
   }
+
+// 포스트 화면;
+.post{
+  .post-meta{
+    color: #696969;
+  }
+  .p-name{
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+  }
+  .post-header{
+    margin-bottom: 30px;
+    border-bottom: 4px solid black;
+    padding-bottom: 43px;
+    padding-top: 19px;
+    text-align: center;
+  }
+}
