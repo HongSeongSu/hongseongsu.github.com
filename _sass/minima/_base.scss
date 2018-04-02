@@ -1,11 +1,15 @@
 /**
  * Reset some basic elements
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
  body, h1, h2, h3, h4, h5, h6,
  p, blockquote, pre, hr,
  dl, dd, ol, ul, figure {
    margin: 0;
    padding: 0;
+   font-family: 'Quicksand', sans-serif;
  }
  
  
@@ -23,6 +27,7 @@
         -o-font-feature-settings: "kern" 1;
            font-feature-settings: "kern" 1;
    font-kerning: normal;
+   font-size: 16px;
  }
  
  
@@ -91,7 +96,7 @@
   * Headings
   */
  h1, h2, h3, h4, h5, h6 {
-   font-weight: $base-font-weight;
+   font-weight: light;
  }
  
  
@@ -148,7 +153,7 @@
    @include relative-font-size(0.9375);
    border: 1px solid $grey-color-light;
    border-radius: 3px;
-   background-color: #eef;
+   background-color: #ffffff;
  }
  
  code {
