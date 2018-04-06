@@ -3,6 +3,11 @@ layout: post
 title: Jekyll로 블로그 시작하기
 categories: [Web]
 ---
+
+{: img-center: style="text-align: center;"}
+![](https://jekyllrb.com/img/logo-2x.png)
+{: img-center}
+
 # 1. Jekyll 이란
 
 jekyll은 정적 사이트 생성기로 다양한 포맷의 원본 텍스트 파일을 템플릿 디렉토리로부터 읽어서 Markdown변환기와 Liquid 렌더러를 통해 가공하여, 웹서버에 곧바로 게시할 수 있는, 완성된 정적 웹사이트를 만들어냅니다.
