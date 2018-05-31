@@ -83,3 +83,72 @@ urlpatterns = [
 
 urlpatterns = format_suffix_patterns(urlpatterns)
 ```
+
+### mixins 사용하기
+
+클래스 기반 뷰를 사용하여 얻은 큰 이점 중 하나는 재사용 가능한 비트를 쉽게 구성 할 수 있다는 것입니다.
+
+지금까지 사용해 온 create/retrieve/update/delete 작업은 모델에서 지원하는 모든 API 지원 뷰와 매우 유사합니다. 이러한 공통된 동작은 REST 프레임워크의 mixin 클래스에서 구현됩니다.
+
+mixin 클래스를 사용하여 뷰를 구성하는 방법을 살펴 보겠습니다. 여기에 우리의 `views.py` 모듈이 있습니다.
+
+```python
+from snippets.models import Snippet
+from snippets.serializers import SnippetSerializer
+from rest_framework import mixins
+from rest_framework import generics
+
+class SnippetList(mixins.ListModelMixin,
+                  mixins.CreateModelMixin,
+                  generics.GenericAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+
+    def get(self, request, *args, **kwargs):
+        return self.list(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
+```
+
+우리는 잠시 시간을내어 여기에서 무슨 일이 일어나고 있는지 정확하게 살펴볼 것입니다. `GenericAPIView`를 사용하고 `ListModelMixin` 및 `CreateModelMixin`을 추가하여 뷰를 작성합니다.
+
+```python
+class SnippetDetail(mixins.RetrieveModelMixin,
+                    mixins.UpdateModelMixin,
+                    mixins.DestroyModelMixin,
+                    generics.GenericAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+```
+
+`GenericAPIView` 클래스를 사용하여 핵심 기능을 제공하고 `.retrieve()`, `.update()` 및 `.destroy()` 액션을 제공하기 위해 mixins를 추가합니다.
+
+### generic class-based views 사용하기
+
+mixin 클래스를 사용하여 이전보다 약간 적은 코드를 사용하기 위해 뷰를 다시 작성했지만 한 걸음 더 나아갈 수 있습니다. REST 프레임 워크는 이미 혼합 된 일반 뷰 집합을 제공하여 우리의 `views.py` 모듈을 더 많이 줄일 수 있습니다.
+
+```python
+from snippets.models import Snippet
+from snippets.serializers import SnippetSerializer
+from rest_framework import generics
+
+
+class SnippetList(generics.ListCreateAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+
+
+class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+```
