@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python 리스트 정렬(list sort)
-categories: [Python, 컴퓨터공학]
+categories: [Python, computerscience]
 ---
 
 # list 정렬

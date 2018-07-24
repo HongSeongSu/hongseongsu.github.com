@@ -6,8 +6,8 @@ title: categories
 <div class="post">
     <h1 class="pageTitle">categories</h1>
 	<ul>
-		<div><a href="./category/컴퓨터공학">컴퓨터공학</a>
-			{% for post in site.categories.컴퓨터공학 %}
+		<div><a href="./category/computerscience">컴퓨터공학</a>
+			{% for post in site.categories.computerscience %}
 				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</div>
