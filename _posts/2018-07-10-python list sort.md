@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Python list의 정렬
-categories: [Python]
+title: Python 리스트 정렬(list sort)
+categories: [Python, 컴퓨터공학]
 ---
 
 # list 정렬
 
 * sorted()
-	* 내장함수(built-in function)
+    * 내장함수(built-in function)
 	* 정렬된 새로운 리스트를 얻어냄
 
 * sort()

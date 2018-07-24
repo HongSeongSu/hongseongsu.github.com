@@ -1,0 +1,9 @@
+---
+layout: default
+---
+컴퓨터공학에 포함된 글들:
+<ul>
+	{% for post in site.categories.컴퓨터공학 %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>

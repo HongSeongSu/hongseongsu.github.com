@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Django Rest 프레임워크 튜토리얼6
-categories: [Python]
+categories: [Django]
 ---
 # 튜토리얼6: ViewSets & Routers
 
