@@ -1,3 +1,9 @@
+---
+layout: post
+title: Python으로 구현한 큐(Queue))
+categories: [Python, computerscience]
+---
+
 # 큐(Queue)
 
 자료(data element)를 보관할 수 있는 선형구조.

@@ -20,7 +20,7 @@
   
     &,
     &:visited {
-      color: $grey-color-dark;
+      color: #ffffff;
     }
   }
   
@@ -37,7 +37,7 @@
     }
   
     .page-link {
-      color: $text-color;
+      color: #ffffff;
       line-height: $base-line-height;
   
       // Gaps between nav items, but not on the last one
@@ -74,7 +74,7 @@
         text-align: center;
   
         > svg path {
-          fill: $grey-color-dark;
+          fill: #ffffff;
         }
       }
   
@@ -113,6 +113,7 @@
   .footer-heading {
     @include relative-font-size(1.125);
     margin-bottom: $spacing-unit / 2;
+    color: #ffffff;
   }
   
   .contact-list,
@@ -123,9 +124,12 @@
   
   .footer-col-wrapper {
     @include relative-font-size(0.9375);
-    color: $grey-color;
+    color: #ffffff;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+    .u-email {
+      color: #ffffff;
+    }
   }
   
   .footer-col {

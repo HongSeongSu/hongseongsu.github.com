@@ -20,7 +20,7 @@
  body {
    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
    color: $text-color;
-   background-color: $background-color;
+   background-color: #000000;
    -webkit-text-size-adjust: 100%;
    -webkit-font-feature-settings: "kern" 1;
       -moz-font-feature-settings: "kern" 1;
@@ -214,15 +214,18 @@
      width: 16px;
      height: 16px;
      display: inline-block;
-     fill: #{$grey-color};
+     fill: #ffffff;
      padding-right: 5px;
      vertical-align: text-top;
  }
  
  .social-media-list {
    li + li {
-     padding-top: 5px;
+     padding-top: 5px;  
    }
+   a {
+    color: #ffffff;
+  }
  }
  
  

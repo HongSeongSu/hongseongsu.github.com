@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-# Hong SeongSu
+# Hong SeongSu (홍성수)
 
 **email**: sshong1991@gmail.com
 
@@ -33,7 +33,7 @@ permalink: /about/
 
 <br>
 
-#### ONMMG
+#### ONMMG(toy project)
 
 - 친구들과 모일 때 마다 무엇을 먹을지 고민하는 시간을 줄이기 위해 기획한 프로젝트
 - [github link](https://github.com/TeamYatop/ONMMG)

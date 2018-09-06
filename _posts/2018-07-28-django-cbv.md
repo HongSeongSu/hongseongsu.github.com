@@ -1,3 +1,9 @@
+---
+layout: post
+title: Django CBV(Class Based View))
+categories: [Python, Django]
+---
+
 # Django Cbv
 
 ## View?
