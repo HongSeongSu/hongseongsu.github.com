@@ -29,5 +29,10 @@ title: categories
 				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</div>
-	</ul>
+		<br>
+		<div><a href="./category/alogrism">algorism</a>
+			{% for post in site.categories.algorism %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</div>	</ul>
 </div>
