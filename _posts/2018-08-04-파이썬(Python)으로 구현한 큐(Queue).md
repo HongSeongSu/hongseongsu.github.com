@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python으로 구현한 큐(Queue))
+title: Python으로 구현한 큐(Queue)
 categories: [Python, computerscience]
 ---
 

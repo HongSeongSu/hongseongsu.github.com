@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django CBV(Class Based View))
+title: Django CBV(Class Based View)
 categories: [Python, Django]
 ---
 
