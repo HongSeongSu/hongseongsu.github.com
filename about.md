@@ -38,3 +38,10 @@ permalink: /about/
 - 친구들과 모일 때 마다 무엇을 먹을지 고민하는 시간을 줄이기 위해 기획한 프로젝트
 - [github link](https://github.com/TeamYatop/ONMMG)
 - [Web](http://sshong1991.pythonanywhere.com/)
+
+<br>
+
+#### Todo
+
+- 기한, 중요도, 완료/미완료를 설정 할 수 있는 todo 사이트
+- [github link](https://github.com/HongSeongSu/DjangoTodo)
