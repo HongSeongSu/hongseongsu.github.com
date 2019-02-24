@@ -14,6 +14,18 @@ categories: [Python, computerscience]
 	* 리스트의 메소드
 	* 해당 리스트를 정렬함
 
+```python
+a = [3, 1, 2, 4]
+
+print(a.sort())
+print(sorted(a))
+
+None
+[1, 2, 3, 4]
+```
+
+<br>
+
 #### 정렬의 순서를 반대로
 
 ```python
@@ -36,6 +48,8 @@ sorted(L, key=lambda x: len(x))
 ['xyz', 'spam', 'abcd']
 ```
 
+<br>
+
 #### 정렬 키를 지정하는 또다른 예
 
 ```python
@@ -46,6 +60,7 @@ L.sort(key=lambda x: x['score'], reverse=True)
 
 점수가 높은 순으로 정렬이 된다.
 
+<br>
 <br>
 
 # 탐색알고리즘
