@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Jekyll로 블로그 시작하기
+category: post
 categories: [Web]
 ---
 
